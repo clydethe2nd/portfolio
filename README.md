@@ -1,4 +1,4 @@
-# Web Devloper Portfolio
+# Web Developer Portfolio
 
 All projects that I am working on as a developer
 
