@@ -1,7 +1,7 @@
-const gulp         = require('gulp');
-const browserSync  = require('browser-sync').create();
-const sass         = require('gulp-sass');
-const autoprefixer = require('gulp-autoprefixer');
+const gulp         = require('gulp'),
+browserSync  = require('browser-sync').create(),
+sass         = require('gulp-sass'),
+autoprefixer = require('gulp-autoprefixer');
 
 // Compile Sass & Inject Into Browser
 gulp.task('sass', function() {
@@ -19,10 +19,11 @@ gulp.task('sass', function() {
 // Watch Sass & Serve
 gulp.task('serve', ['sass'], function() {
     browserSync.init({
-        server: "./src"  
+        server: "./src"
     });
 
     gulp.watch(['src/scss/*.scss'], ['sass']);
+    gulp.watch("src/scripts/*.js").on('change', browserSync.reload);
     gulp.watch("src/*.html").on('change', browserSync.reload);
 });
 

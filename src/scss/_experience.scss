@@ -1,0 +1,50 @@
+#experience-section {
+	padding: 80px 15px;
+}
+
+#experience-section .large-title {
+	@include head-1;
+
+}
+
+@media only screen
+	and (max-width: 480px) {
+
+		#experience-section .large-title {
+			font-size: 3rem;
+		}
+
+}
+
+
+#experience-section .experience-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 20px;
+
+}
+
+#experience-section .experience-container .large-icons .square {
+	border: 2rem solid #732b4a;
+	padding: 3px;
+	display: inline-block;
+	position: relative;
+	left: -25px;
+}
+
+#experience-section .experience-container .large-icons .square .blue-box {
+	width: 150px;
+	height: 150px;
+	background: linear-gradient(135deg,#063571,#732b4a);
+	padding: 5px;
+	color: white;
+	text-transform: uppercase;
+	font-weight: 5 00;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.1rem;
+	letter-spacing: 3px;
+	  
+
+}

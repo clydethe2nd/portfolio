@@ -1,6 +1,6 @@
-# Sass Starter Pack
+# Web Devloper Portfolio
 
-A light package for compiling Sass and running a dev server
+All projects that I am working on as a developer
 
 ### Version
 1.0.0

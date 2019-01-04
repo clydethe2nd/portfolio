@@ -1,7 +1,21 @@
-$bg-color: #333;
-$color: #fff;
+@import "reset";
+@import "colors";
+@import "typography";
+@import "mixins";
+@import "vars";
+@import "top-section";
+@import "services";
+@import "portfolio";
+@import "experience";
 
-body {
-    background: $bg-color;
-    color:$color;
+html, body {
+	box-sizing: border-box;
+	background: $color-background;
+	color: #f3f3f3;
+}
+
+
+.container {
+	max-width: 1150px;
+	margin: 0 auto;
 }
