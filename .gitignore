@@ -38,4 +38,5 @@ node_modules
 .awspublish*
 
 # VSCODE files
-.vscode
+.vscode/
+settings.json
