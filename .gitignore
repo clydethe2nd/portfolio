@@ -40,3 +40,7 @@ node_modules
 # VSCODE files
 .vscode/
 settings.json
+
+# Yarn
+
+yarn.lock
